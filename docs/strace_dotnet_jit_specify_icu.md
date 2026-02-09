@@ -205,3 +205,13 @@ $ DOTNET_ICU_VERSION_OVERRIDE=74 ldd ./bin/hello_csharp
         libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000071e5f2323000)
         /lib64/ld-linux-x86-64.so.2 (0x000071e5f34a0000)
 ```
+
+## Find ICU versions
+
+How to find your icu versions. You have `74` for following case.
+
+```shell
+$ ldconfig -p | grep -E 'libicu(uc|i18n)\.so' | head -n 50
+        libicuuc.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicuuc.so.74
+        libicui18n.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicui18n.so.74
+```
