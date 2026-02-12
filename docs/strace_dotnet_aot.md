@@ -244,7 +244,7 @@ strace: Process 3509 attached
 ### 1st write
 
 `\x1b` = ESC
-`\x1b\x5b\x3f\x31\x68` = `ESC [ ? 1 h` = DEC Private Mode Set 1（DECCKM: cursor keys mode）
+`\x1b\x5b\x3f\x31\x68` = `ESC [ ? 1 h` = DEC Private Mode Set 1 (DECCKM: cursor keys mode)
 `\x1b\x3d` = `ESC` = = DECKPAM（Keypad Application Mode）
 
 ```
